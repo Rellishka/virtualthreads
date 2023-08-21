@@ -18,7 +18,7 @@ public class ThreadController {
 
     @GetMapping("/load")
     public void doSomething() throws InterruptedException {
-        LOG.info("hey, I'm doing something");
+        LOG.info("hey, I'm doing something: {}", Thread.currentThread());
         Thread.sleep(1000);
     }
 }
